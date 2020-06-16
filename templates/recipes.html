@@ -1,11 +1,12 @@
 {% extends from base.html %}
 {% block content %}
-    {% for recipe in recipes %}
+
+        {% for recipe in recipes %}
         {{recipe.recipe_name}}
         {{recipe.servings}}
         {{recipe.ingredients}}
         {{recipe.method}}
-    {% endfor %}
-    
+        {% endfor %}
+
 {% endblock %}
 
