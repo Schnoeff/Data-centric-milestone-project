@@ -18,8 +18,19 @@
   </div>
 </nav>
 
-<ul class="collapsible">
+<ul class="collapsible popout">
 {% for recipe in recipes %}
+    <li>
+      <div class="collapsible-header"><i class="material-icons">arrow_downward</i>{{recipe.recipe_name}}</div>
+      
+      <div class="collapsible-body"><span><h4>Ingredients</h4>{{recipe.ingredients}} 
+      <br> 
+      <br> 
+      <h4>Method</h4>{{recipe.method}}</span></div>
+      <img class="responsive-img" src="https://cleobuttera.com/wp-content/uploads/2019/02/lotus-cheesecake-berries-700x1050.jpg" height="200px" width="300px">
+    </li>
+    {% endfor %}
+    {% for recipe in recipes %}
     <li>
       <div class="collapsible-header"><i class="material-icons">filter_drama</i>{{recipe.recipe_name}}</div>
       <div class="collapsible-body"><span><h4>Ingredients</h4>{{recipe.ingredients}} 
@@ -37,10 +48,6 @@
       <h4>Method</h4>{{recipe.method}}</span></div>
     </li>
     {% endfor %}
-    <li>
-      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-    </li>
     
   </ul>
         {% for recipe in recipes %}
