@@ -1,13 +1,5 @@
 {% extends 'base.html' %}
 {% block content %}
-
-        {% for recipe in recipes %}
-        {{recipe.recipe_name}}
-        {{recipe.servings}}
-        {{recipe.ingredients}}
-        {{recipe.method}}
-        {% endfor %}
-
 <ul id="dropdown1" class="dropdown-content">
   <li><a href="#!">one</a></li>
   <li><a href="#!">two</a></li>
@@ -25,5 +17,13 @@
     </ul>
   </div>
 </nav>
+        {% for recipe in recipes %}
+        {{recipe.recipe_name}}
+        {{recipe.servings}}
+        {{recipe.ingredients}}
+        {{recipe.method}}
+        {% endfor %}
+
+
 {% endblock %}
 
