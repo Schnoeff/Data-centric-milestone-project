@@ -17,7 +17,7 @@ def get_recipes():
 
 @app.route('/add_recipes')
 def add_recipes():
-    return render_template('addrecipe.html')
+    return render_template('addrecipe.html', course=mongo.db.recipe_course.find())
 
 
 if __name__ == '__main__':
