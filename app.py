@@ -22,7 +22,7 @@ def add_recipes():
 @app.route('/insert_recipe' , methods=['POST'])
 def insert_recipe():
     recipes = mongo.db.recipe_details
-    recipe.insert_one(request.form.to_dict())
+    recipes.insert_one(request.form.to_dict())
     return redirect(url_for('get_recipes'))
 
 if __name__ == '__main__':
