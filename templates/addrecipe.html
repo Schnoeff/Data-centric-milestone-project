@@ -7,31 +7,31 @@
 <div class="row">
 	<form class="col s12" action="{{ url_for('insert_recipe') }}" method="POST">
 		<div class="input-field col s12">
-			<select id="course" name="recipe_course">
+			<select id="recipe_course" name="recipe_course">
       <option value="" disabled selected>Choose the recipe course</option>
       {% for course in recipe_course %}
-      <option value="{{course.recipe_course}}">{{course.recipe_course}}</option>
+          <option value="{{course.recipe_course}}">{{course.recipe_course}}</option>
       {% endfor %}
     </select>
 			<label>Recipe course</label>
 		</div>
 		<div class="row">
 			<div class="input-field col s6">
-				<input id="recipe_name" name="recipe_name" type="text" class="validate">
+				<input id="recipe_name" name="recipe_name" type="text" class="validate" required>
 				<label for="recipie_name">Recipe Name</label>
 			</div>
 			<div class="input-field col s6">
-				<input id="recipe_servings" name="recipe_servings" type="number" class="validate">
+				<input id="recipe_servings" name="recipe_servings" type="number" class="validate" required>
 				<label for="recipie_servings">Servings</label>
 			</div>
 		</div>
 		<div class="row">
 			<div class="input-field col s6">
-				<input id="recipe_ingerdients" name="recipe_ingredients" type="textarea" class="validate">
+				<input id="recipe_ingerdients" name="recipe_ingredients" type="textarea" class="validate" required>
 				<label for="recipie_ingredients">Ingredients</label>
 			</div>
 			<div class="input-field col s6">
-				<input id="recipe_method" name="recipe_method" type="textarea" class="validate">
+				<input id="recipe_method" name="recipe_method" type="textarea" class="validate" required>
 				<label for="recipie_method">Method</label>
 			</div>
 		</div>
