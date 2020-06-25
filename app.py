@@ -25,6 +25,12 @@ def insert_recipe():
     recipes.insert_one(request.form.to_dict())
     return redirect(url_for('get_recipes'))
 
+@app.route('/edit_recipe/<recipe_id>')
+def edit_recipe(recipe_id):
+    the_recipe=mongo.db.recipe_details.find_one({"_id":ObjectId(recipe_id)})
+    all_recipe_course=mongo.db.recipe_course.find()
+    return render_template('editrecipe.html', recipe = the_recipe,recipe_course = all_recipe_course)
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
