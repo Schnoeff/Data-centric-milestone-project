@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3> Recipe courses </h3>
+<ul class="collapsible" data-collapsible="accordion">
+{% for course in courses %}
+    <li>
+      <div class="collapsible-header">{{course.recipe_course}}</div>
+    </li>
+    <div class="row">
+    <a href="" class="waves-effect waves-light btn editbutton"><i class="material-icons left">edit</i>Edit course</a>
+    <a href="" class="waves-effect waves-light btn editbutton"><i class="material-icons left">delete</i>Delete course</a>
+    </div>
+    {% endfor %}
+    
+    
+  </ul>
+        {% for recipe in recipes %}
+        {{recipe.recipe_name}}
+        {{recipe.servings}}
+        {{recipe.ingredients}}
+        {{recipe.method}}
+        {% endfor %}
+
+
+{% endblock %}
+
