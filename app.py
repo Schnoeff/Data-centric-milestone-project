@@ -34,13 +34,13 @@ def edit_recipe(recipe_id):
 @app.route('/update_recipe/<recipe_id>', methods=["POST"])
 def update_recipe(recipe_id):
     recipes = mongo.db.recipe_details
-    recipes.update({'_id': ObjectId(recipe_id)}),
+    recipes.update({'_id': ObjectId(recipe_id)},
     {
         'recipe_name': request.form.get('recipe_name'),
         'servings': request.form.get('servings'),
         'ingredients': request.form.get('ingredients'),
         'method': request.form.get('method')
-    }
+    })
     return redirect(url_for('get_recipes'))
 
 @app.route('/delete_recipe/<recipe_id>')
