@@ -3,7 +3,14 @@ body {
 }
 
 .btn{
-    color:red;
-    padding:400px;
+    background-color:red;
+    
 }
 
+.btn:hover{
+    background-color: yellow;
+}
+
+.recipes{
+    color:red;
+}
