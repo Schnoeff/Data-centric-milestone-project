@@ -52,6 +52,10 @@ def delete_recipe(recipe_id):
 def get_course():
     return render_template('recipecourse.html', courses=mongo.db.recipe_course.find())
 
+@app.route('/edit_course/<course_id>')
+def edit_course(course_id):
+    return render_template('editcourse.html',course=mongo.db.recipe_course.find_one({"_id":ObjectId(course_id)}))
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
