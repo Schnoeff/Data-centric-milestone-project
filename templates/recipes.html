@@ -4,6 +4,7 @@
 <div class="navbuttons">
   <a href="{{url_for('add_recipes')}}" class="waves-effect waves-light btn"><i class="material-icons left">add</i>Add a recipe</a>
   <a href="{{url_for('get_course')}}" class="waves-effect waves-light btn"><i class="material-icons left">list</i>Courses</a>
+  
 </div>
 <ul class="collapsible recipes" data-collapsible="accordion">
 {% for recipe in recipes %}
@@ -14,7 +15,8 @@
       <div class="collapsible-body recipes"><span>
       <p>Serves: {{recipe.servings}}</p>
       
-      <h4 class="recipe-title">Ingredients</h4>{{recipe.ingredients}} 
+      <h4 class="recipe-title">Ingredients</h4>
+      {{recipe.ingredients}} 
       <br> 
       
       <h4 class="recipe-title">Method</h4>{{recipe.method}}</span></div>
