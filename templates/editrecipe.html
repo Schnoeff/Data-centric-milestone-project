@@ -7,8 +7,7 @@
 <div class="row">
 	<form class="col s12" action="{{ url_for('update_recipe', recipe_id=recipe._id) }}" method="POST">
 		<div class="input-field col s12">
-			
-			
+					
 		</div>
 		<div class="row">
 			<div class="input-field col s6">
@@ -33,7 +32,7 @@
 		<button class="btn waves-effect waves-light" type="submit" name="action">Submit changes
     <i class="material-icons right">send</i>
   </button>
-    <a href="{{url_for('get_recipes')}}" class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Go back</a>
+    <a href="{{url_for('get_recipes')}}" class="waves-effect waves-light btn"><i class="material-icons left">arrow_back</i>Go back</a>
 
 	</form>
 </div>

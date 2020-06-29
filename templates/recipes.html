@@ -9,19 +9,19 @@
 {% for recipe in recipes %}
 
     <li>
-      <div class="collapsible-header"><i class="material-icons">arrow_downward</i>{{recipe.recipe_name}}</div>
+      <div class="collapsible-header recipe-header"><i class="material-icons">arrow_downward</i>{{recipe.recipe_name}}</div>
       
-      <div class="collapsible-body"><span>
+      <div class="collapsible-body recipes"><span>
       <p>Serves: {{recipe.servings}}</p>
       
-      <h4>Ingredients</h4>{{recipe.ingredients}} 
+      <h4 class="recipe-title">Ingredients</h4>{{recipe.ingredients}} 
       <br> 
       
-      <h4>Method</h4>{{recipe.method}}</span></div>
+      <h4 class="recipe-title">Method</h4>{{recipe.method}}</span></div>
     </li>
-    <div class="row">
-    <a href="{{url_for('edit_recipe',recipe_id=recipe._id)}}" class="waves-effect waves-light btn editbutton"><i class="material-icons left">cloud</i>Edit recipe</a>
-    <a href="{{url_for('delete_recipe',recipe_id=recipe._id)}}" class="waves-effect waves-light btn editbutton"><i class="material-icons left">cloud</i>Delete recipe</a>
+    <div class="row action-buttons">
+    <a href="{{url_for('edit_recipe',recipe_id=recipe._id)}}" class="waves-effect waves-light btn editbutton"><i class="material-icons left">edit</i>Edit recipe</a>
+    <a href="{{url_for('delete_recipe',recipe_id=recipe._id)}}" class="waves-effect waves-light btn editbutton"><i class="material-icons left">delete</i>Delete recipe</a>
     </div>
     {% endfor %}
     
