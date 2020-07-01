@@ -15,10 +15,12 @@ body {
     background-color: yellow;
 }
 
-.recipes{
+.recipe_card{
     background-color:blue;
-    padding-left:30px;
+    padding-top:20px;
 }
+
+
 
 .recipe-header{
     background-color:green;

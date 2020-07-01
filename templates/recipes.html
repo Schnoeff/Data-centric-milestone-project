@@ -8,8 +8,8 @@
 
 {% for recipe in recipes %}
 
-  <div class="row">
-    <div class="col s12 m6">
+  <div class="row  col xl6 l6 m6">
+    <div class="col xl6 l6 m6 recipe_card ">
       <div class="card blue-grey darken-1">
         <div class="card-content white-text">
           <h3>{{recipe.recipe_name}}</h3>
@@ -41,19 +41,3 @@
 
 {% endblock %}
 
-<li>
-      <div class="collapsible-header recipe-header"><i class="material-icons">arrow_downward</i>{{recipe.recipe_name}}</div>
-      
-      <div class="collapsible-body recipes"><span>
-      <p>Serves: {{recipe.servings}}</p>
-      
-      <h4 class="recipe-title">Ingredients</h4>
-      {{recipe.ingredients}} 
-      <br> 
-      
-      <h4 class="recipe-title">Method</h4>{{recipe.method}}</span></div>
-    </li>
-    <div class="row action-buttons">
-    <a href="{{url_for('edit_recipe',recipe_id=recipe._id)}}" class="waves-effect waves-light btn editbutton"><i class="material-icons left">edit</i>Edit recipe</a>
-    <a href="{{url_for('delete_recipe',recipe_id=recipe._id)}}" class="waves-effect waves-light btn editbutton"><i class="material-icons left">delete</i>Delete recipe</a>
-    </div>
