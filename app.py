@@ -38,8 +38,26 @@ def update_recipe(recipe_id):
     {
         'recipe_name': request.form.get('recipe_name'),
         'servings': request.form.get('servings'),
-        'ingredients': request.form.get('ingredients'),
-        'method': request.form.get('method')
+        'ingredient_1': request.form.get('ingredient_1'),
+        'ingredient_2': request.form.get('ingredient_2'),
+        'ingredient_3': request.form.get('ingredient_3'),
+        'ingredient_4': request.form.get('ingredient_4'),
+        'ingredient_5': request.form.get('ingredient_5'),
+        'ingredient_6': request.form.get('ingredient_6'),
+        'ingredient_7': request.form.get('ingredient_7'),
+        'ingredient_8': request.form.get('ingredient_8'),
+        'ingredient_9': request.form.get('ingredient_9'),
+        'ingredient_10': request.form.get('ingredient_10'),
+        'method_1': request.form.get('method_1'),
+        'method_2': request.form.get('method_2'),
+        'method_3': request.form.get('method_3'),
+        'method_4': request.form.get('method_4'),
+        'method_5': request.form.get('method_5'),
+        'method_6': request.form.get('method_6'),
+        'method_7': request.form.get('method_7'),
+        'method_8': request.form.get('method_8'),
+        'method_9': request.form.get('method_9'),
+        'method_10': request.form.get('method_10'),
     })
     return redirect(url_for('get_recipes'))
 
@@ -48,13 +66,7 @@ def delete_recipe(recipe_id):
     mongo.db.recipe_details.remove({'_id': ObjectId(recipe_id)})
     return redirect(url_for('get_recipes'))
 
-@app.route('/get_course')
-def get_course():
-    return render_template('recipecourse.html', courses=mongo.db.recipe_course.find())
 
-@app.route('/edit_course/<course_id>')
-def edit_course(course_id):
-    return render_template('editcourse.html',course=mongo.db.recipe_course.find_one({"_id":ObjectId(course_id)}))
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),

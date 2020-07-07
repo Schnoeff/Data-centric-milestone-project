@@ -3,22 +3,41 @@
 <h3 class="page-heading"> Recipes </h3>
 <div class="navbuttons">
   <a href="{{url_for('add_recipes')}}" class="waves-effect waves-light btn"><i class="material-icons left">add</i>Add a recipe</a>
-  <a href="{{url_for('get_course')}}" class="waves-effect waves-light btn"><i class="material-icons left">list</i>Courses</a>
   
-
+  
+<div class="row">
 {% for recipe in recipes %}
 
-  <div class="row  col xl6 l6 m6">
-    <div class="col xl6 l6 m6 recipe_card ">
+  <div class="container col xl6">
+    <div class="col 6 recipe_card ">
       <div class="card blue-grey darken-1">
         <div class="card-content white-text">
           <h3>{{recipe.recipe_name}}</h3>
           
           <p>Serves: {{recipe.servings}}</p>
           <h3> Ingredients</h3>
-          <p>{{recipe.ingredients}}</p>
+          <p>1. {{recipe.ingredient_1}}</p>
+          <p>2. {{recipe.ingredient_2}}</p>
+          <p>2. {{recipe.ingredient_3}}</p>
+          <p>2. {{recipe.ingredient_4}}</p>
+          <p>2. {{recipe.ingredient_5}}</p>
+          <p>2. {{recipe.ingredient_6}}</p>
+          <p>2. {{recipe.ingredient_7}}</p>
+          <p>2. {{recipe.ingredient_8}}</p>
+          <p>2. {{recipe.ingredient_9}}</p>
+          <p>2. {{recipe.ingredient_10}}</p>
           <h3> Method </h3>
-          <p>{{recipe.method}}</p>
+          <p class="method">Step 1: {{recipe.method_1}}</p>
+          <br>
+          <p>Step 2: {{recipe.method_2}}</p>
+          <p>Step 3: {{recipe.method_3}}</p>
+          <p>Step 4: {{recipe.method_4}}</p>
+          <p>Step 5: {{recipe.method_5}}</p>
+          <p>Step 6: {{recipe.method_6}}</p>
+          <p>Step 7: {{recipe.method_7}}</p>
+          <p>Step 8: {{recipe.method_8}}</p>
+          <p>Step 9: {{recipe.method_9}}</p>
+          <p>Step 10: {{recipe.method_10}}</p>
           
         </div>
         <div class="card-action">
@@ -28,14 +47,14 @@
       </div>
     </div>
   </div>
-    
+</div>   
     {% endfor %}
     
         {% for recipe in recipes %}
         {{recipe.recipe_name}}
         {{recipe.servings}}
-        {{recipe.ingredients}}
-        {{recipe.method}}
+        {{recipe.ingredient_1}}
+        {{recipe.method_1}}
         {% endfor %}
 
 
