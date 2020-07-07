@@ -1,5 +1,10 @@
 body {
     background-color:orange;
+    
+}
+
+.container{
+    min-width:50%;
 }
 
 .btn{
@@ -16,8 +21,9 @@ body {
 }
 
 .recipe_card{
-    background-color:blue;
+    background-color:lightblue;
     padding-top:30px;
+    max-width:50%;
 }
 
 
@@ -34,7 +40,7 @@ body {
 
 .page-title{
     font-size:48px;
-}
+    }
 
 .brand-logo{
     font-size:48px;
@@ -50,4 +56,10 @@ body {
 
 .method{
     text-align:center;
+}
+
+.section-header{
+    font-size:65px;
+    font-family: 'IM Fell Great Primer', serif;
+    
 }
