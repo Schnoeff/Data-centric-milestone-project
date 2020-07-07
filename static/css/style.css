@@ -1,6 +1,17 @@
 body {
-    background-color:orange;
+    background-color:lightskyblue;
     
+}
+
+.recipe-box{
+    background-color:red;
+    margin:30px;
+    border-style:solid;
+    border-color:black;
+}
+
+.input-field{
+    color:white;
 }
 
 .page-heading{
