@@ -3,8 +3,9 @@ body {
     
 }
 
-.container{
-    min-width:50%;
+.page-heading{
+    font-size:72px;
+    text-align:center;
 }
 
 .btn{
@@ -23,7 +24,8 @@ body {
 .recipe_card{
     background-color:lightblue;
     padding-top:30px;
-    max-width:50%;
+    min-width:100%;
+    
 }
 
 
@@ -48,6 +50,7 @@ body {
 
 .navbuttons{
     text-align: center;
+    padding-bottom:25px;
 }
 
 .shopping-links{
