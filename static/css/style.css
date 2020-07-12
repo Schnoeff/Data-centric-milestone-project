@@ -4,6 +4,7 @@ body {
 }
 
 .recipe-box{
+    
     background-color:red;
     margin:30px;
     border-style:solid;
@@ -33,10 +34,18 @@ body {
 }
 
 .recipe_card{
-    background-color:lightblue;
-    padding-top:30px;
-    min-width:100%;
-    
+    background-color:orange;      
+    min-width:50%;
+    max-width:50%;
+     
+    }
+
+.recipe-table{
+    margin:10px;
+}
+
+.collapsible-header{
+    text-align:center;
 }
 
 .divider{
