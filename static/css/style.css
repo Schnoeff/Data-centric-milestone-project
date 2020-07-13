@@ -1,8 +1,33 @@
+/*--------------------------------------------------Layout*/
+
 body {
     background-color:lightskyblue;
     
 }
+.page-title{
+    font-size:48px;
+    font-family: 'IM Fell Great Primer', serif;
+    }
 
+.brand-logo{
+    font-size:48px;
+}
+
+.navbuttons{
+    text-align: center;
+    padding-bottom:25px;
+}
+
+.page-heading{
+    font-size:72px;
+    text-align:center;
+}
+.section-header{
+    font-size:52px;
+    font-family: 'IM Fell Great Primer', serif;
+    
+}
+/*-----------------------------------------Recipe card*/
 .recipe-box{
     
     background-color:red;
@@ -10,14 +35,48 @@ body {
     border-style:solid;
     border-color:black;
 }
-
-.input-field{
-    color:white;
+.recipe_card{
+    background-color:lightgrey;      
+    min-width:45%;
+    max-width:45%;
+    margin:10px;
 }
 
-.page-heading{
-    font-size:72px;
+.recipe-layout{
+    margin:0;
+}
+
+.recipe-table{
+    margin-left:20px;
     text-align:center;
+}
+
+.recipe-header{
+    background-color:green;
+    font-size:28px;
+}
+
+.divider{
+    border-width: 2px;
+    width:75%;
+}
+
+.recipe-title{
+    color:purple;
+    font-size:32px;
+}
+
+.method{
+    text-align:center;
+}
+
+.collapsible-header{
+    background-color:grey;
+}
+
+/*-----------------------------------Add recipe page*/
+.input-field{
+    color:white;
 }
 
 .btn{
@@ -33,60 +92,19 @@ body {
     background-color: yellow;
 }
 
-.recipe_card{
-    background-color:orange;      
-    min-width:50%;
-    max-width:50%;
-     
-    }
 
-.recipe-table{
-    margin:10px;
-}
 
-.collapsible-header{
-    text-align:center;
-}
 
-.divider{
-    border-width: 2px;
-    width:75%;
-}
 
-.recipe-header{
-    background-color:green;
-    font-size:28px;
-}
 
-.recipe-title{
-    color:purple;
-    font-size:32px;
-}
 
-.page-title{
-    font-size:48px;
-    font-family: 'IM Fell Great Primer', serif;
-    }
 
-.brand-logo{
-    font-size:48px;
-}
 
-.navbuttons{
-    text-align: center;
-    padding-bottom:25px;
-}
+
 
 .shopping-links{
     padding-top:10px;
 }
 
-.method{
-    text-align:center;
-}
 
-.section-header{
-    font-size:65px;
-    font-family: 'IM Fell Great Primer', serif;
-    
-}
+
