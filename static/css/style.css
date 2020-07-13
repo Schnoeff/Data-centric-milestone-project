@@ -29,17 +29,17 @@ body {
 }
 /*-----------------------------------------Recipe card*/
 .recipe-box{
-    
-    background-color:red;
+    background-color:salmon;
     margin:30px;
     border-style:solid;
     border-color:black;
+    color:white;
 }
 .recipe_card{
     background-color:lightgrey;      
-    min-width:45%;
-    max-width:45%;
-    margin:10px;
+    border-style: solid;
+    border-color:black;
+    border-width:2px;
 }
 
 .recipe-layout{
@@ -47,7 +47,7 @@ body {
 }
 
 .recipe-table{
-    margin-left:20px;
+    margin:20px;
     text-align:center;
 }
 
