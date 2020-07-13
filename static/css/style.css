@@ -2,7 +2,7 @@
 
 body {
     background-color:lightskyblue;
-    
+    font-size:28px;
 }
 .page-title{
     font-size:48px;
@@ -37,6 +37,7 @@ body {
     border-style: solid;
     border-color:black;
     border-width:2px;
+    font-family: 'Caveat', cursive;
 }
 
 .recipe-layout{
@@ -73,20 +74,15 @@ body {
 
 .recipe-box{
     background-color:lightgrey;
-    color:white;
+    
     margin:30px;
     border-style:solid;
     border-color:black;
-    font-family: 'IM Fell Great Primer', serif;
-    
+    font-family: 'Caveat', cursive;
 }
 
 #recipe_name{
-    font-size:30px;
-}
-
-.input-field{
-    font-size:30px;
+    font-size:32px;
 }
 
 .btn{
@@ -102,19 +98,22 @@ body {
     background-color: darksalmon;
 }
 
+/*----------------------------------------------------Footer*/
 
-
-
-
-
-
-
-
-
+.page-footer{
+    font-family: 'IM Fell Great Primer', serif;
+    }
 
 .shopping-links{
     padding-top:10px;
+    text-decoration: underline;
 }
+
+
+
+
+
+
 
 
 
