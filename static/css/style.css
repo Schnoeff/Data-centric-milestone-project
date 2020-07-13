@@ -19,8 +19,11 @@ body {
 }
 
 .page-heading{
-    font-size:72px;
+    font-size:92px;
     text-align:center;
+    font-family: 'IM Fell Great Primer', serif;
+    color:white;
+    margin:20px;
 }
 .section-header{
     font-size:52px;
@@ -28,13 +31,7 @@ body {
     
 }
 /*-----------------------------------------Recipe card*/
-.recipe-box{
-    background-color:salmon;
-    margin:30px;
-    border-style:solid;
-    border-color:black;
-    color:white;
-}
+
 .recipe_card{
     background-color:lightgrey;      
     border-style: solid;
@@ -61,10 +58,7 @@ body {
     width:75%;
 }
 
-.recipe-title{
-    color:purple;
-    font-size:32px;
-}
+
 
 .method{
     text-align:center;
@@ -75,12 +69,28 @@ body {
 }
 
 /*-----------------------------------Add recipe page*/
-.input-field{
+
+
+.recipe-box{
+    background-color:lightgrey;
     color:white;
+    margin:30px;
+    border-style:solid;
+    border-color:black;
+    font-family: 'IM Fell Great Primer', serif;
+    
+}
+
+#recipe_name{
+    font-size:30px;
+}
+
+.input-field{
+    font-size:30px;
 }
 
 .btn{
-    background-color:red;      
+    background-color:salmon;      
 }
 
 .action-buttons{
@@ -89,7 +99,7 @@ body {
 }
 
 .btn:hover{
-    background-color: yellow;
+    background-color: darksalmon;
 }
 
 

@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1>Edit recipe</h1>
-
+<p class="page-heading">Edit recipe</p>
+<div class="recipe-box">
 
 <div class="row">
 	<form class="col s12" action="{{ url_for('update_recipe', recipe_id=recipe._id) }}" method="POST">
@@ -12,7 +12,7 @@
 		<div class="row">
 			<div class="input-field col s6">
 				<input id="recipe_name" name="recipe_name" type="text" class="validate" value="{{recipe.recipe_name}}" required>
-				<label for="recipie_name">Recipe Name</label>
+				<label for="recipe_name">Recipe Name</label>
 			</div>
 			<div class="input-field col s6">
 				<input id="recipe_servings" name="servings" type="number" class="validate" value="{{recipe.servings}}" required>
@@ -109,5 +109,6 @@
     <a href="{{url_for('get_recipes')}}" class="waves-effect waves-light btn"><i class="material-icons left">arrow_back</i>Go back</a>
 
 	</form>
+</div>
 </div>
 {% endblock %}
