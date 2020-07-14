@@ -1,22 +1,23 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} <!-- Using the page layout from the base.html page -->
 {% block content %}
 <h3 class="page-heading"> Recipes </h3>
 <div class="navbuttons">
-  <a href="{{url_for('add_recipes')}}" class="waves-effect waves-light btn"><i class="material-icons left">add</i>Add a recipe</a>
-  
+	<a href="{{url_for('add_recipes')}}" class="waves-effect waves-light btn"><i class="material-icons left">add</i>Add
+		a recipe</a>
+
 </div>
 
-
+<!-- In 1 row, for each entry add it to the list of recipes on the page-->
 <div class="row recipe-table">
-{% for recipe in recipes %}
+	{% for recipe in recipes %}
 
-        <ul class="collapsible recipe_card col xl6 m6  ">
-        <li class="section-header">{{recipe.recipe_name}}</li>
-          
-          <p>Serves: {{recipe.servings}}</p>
-          <li>
-      <div class="collapsible-header"><i class="material-icons ">format_list_bulleted</i>Ingredients</div>
-      <div class="collapsible-body"><span><p> {{recipe.ingredient_1}}</p>
+	<ul class="collapsible recipe_card col xl6 m6  ">
+		<li class="section-header">{{recipe.recipe_name}}</li> <!-- recipe name -->
+
+		<p>Serves: {{recipe.servings}}</p> <!-- recipe servings -->
+		<li>
+			<div class="collapsible-header"><i class="material-icons ">format_list_bulleted</i>Ingredients</div> <!-- recipe ingredients -->
+			<div class="collapsible-body"><span><p> {{recipe.ingredient_1}}</p>
           <hr class="divider">
           <p> {{recipe.ingredient_2}}</p>
           <hr class="divider">
@@ -35,10 +36,10 @@
           <p> {{recipe.ingredient_9}}</p>
           <hr class="divider">
           <p> {{recipe.ingredient_10}}</p></span></div>
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Method</div>
-      <div class="collapsible-body"><span><p class="method"> {{recipe.method_1}}</p>
+		</li>
+		<li>
+			<div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Method</div> <!-- recipe method -->
+			<div class="collapsible-body"><span><p class="method"> {{recipe.method_1}}</p>
           <hr class="divider">
           <p> {{recipe.method_2}}</p>
           <hr class="divider">
@@ -57,18 +58,17 @@
           <p>{{recipe.method_9}}</p>
           <hr class="divider">
           <p>{{recipe.method_10}}</p></span></div>
-    </li>
-       <li>
-          <a href="{{url_for('edit_recipe',recipe_id=recipe._id)}}" class="waves-effect waves-light btn editbutton"><i class="material-icons left edit-button">edit</i>Edit recipe</a>
-    <a href="{{url_for('delete_recipe',recipe_id=recipe._id)}}" class="waves-effect waves-light btn editbutton"><i class="material-icons left">delete</i>Delete recipe</a>
-     </li>   
-  </ul>
+		</li>
+		<li> <!-- Edit and delete buttons -->
+			<a href="{{url_for('edit_recipe',recipe_id=recipe._id)}}" 
+				class="waves-effect waves-light btn editbutton"><i class="material-icons left edit-button">edit</i>Edit
+				recipe</a>
+			<a href="{{url_for('delete_recipe',recipe_id=recipe._id)}}"
+				class="waves-effect waves-light btn editbutton"><i class="material-icons left">delete</i>Delete
+				recipe</a>
+		</li>
+	</ul>
 
-{% endfor %}
-    </div> 
-
-        
-
-
+	{% endfor %}
+</div>
 {% endblock %}
-

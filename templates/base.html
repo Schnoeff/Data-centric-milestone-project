@@ -1,52 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css">
-<link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@1&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+	<!--- Stylesheet and used font references -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@1&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+	<!-- Navbar with a single link to navigate back to the home page displayed on every page -->
+	<nav>
+		<div class="nav-wrapper">
+			<a href="{{url_for('get_recipes')}}" class="brand-logo center page-title">Cookbook</a>
 
-<nav>
-    <div class="nav-wrapper">
-      <a href="{{url_for('get_recipes')}}"  class="brand-logo center page-title">Cookbook</a>
-      
-    </div>
-  </nav>
+		</div>
+	</nav>
 
-    {% block content %}{% endblock %}
-<footer class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s6">
-                <h5 class="white-text">Useful Information</h5>
-                <p class="grey-text text-lighten-4">Here you can find a handful of useful links that will redirect you to a popular shopping site which cover all ranges of cooking ingredients and tools.</p>
-              </div>
-              <div class="col l6 s6">
-                <h5 class="white-text">Useful shopping links</h5>
-                <ul>
-                  <li class="shopping-links"><a class="grey-text text-lighten-3" href="https://www.tesco.com/" target="_blank">Tesco:  https://www.tesco.com/</a></li>
-                  <li class="shopping-links"><a class="grey-text text-lighten-3" href="https://www.waitrose.com/" target="_blank">Waitrose: https://www.waitrose.com/</a></li>
-                  <li class="shopping-links"><a class="grey-text text-lighten-3" href="https://www.marksandspencer.com/" target="_blank">Marks & Spencers: https://www.marksandspencer.com/</a></li>
-                  <li class="shopping-links"><a class="grey-text text-lighten-3" href="https://www.lakeland.co.uk/in-the-kitchen/baking/baking-ingredients/" target="_blank">Lakeland: https://www.lakeland.co.uk/in-the-kitchen/baking/baking-ingredients/</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-         
-        </footer>      
+	{% block content %}{% endblock %}
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script type="text/javascript">
- $(document).ready(function(){
+	<!-- Page footer displayed on every page-->
+	<footer class="page-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s6">
+					<h5 class="white-text">Useful Information</h5>
+					<p class="grey-text text-lighten-4">Here you can find a handful of useful links that will redirect
+						you to a popular shopping site which cover all ranges of cooking ingredients and tools.</p>
+				</div>
+				<div class="col l6 s6">
+					<h5 class="white-text">Useful shopping links</h5>
+					<!-- List of shopping links leading to external sites-->
+					<ul>
+						<li class="shopping-links"><a class="grey-text text-lighten-3" href="https://www.tesco.com/"
+								target="_blank">Tesco: https://www.tesco.com/</a></li>
+						<li class="shopping-links"><a class="grey-text text-lighten-3" href="https://www.waitrose.com/"
+								target="_blank">Waitrose: https://www.waitrose.com/</a></li>
+						<li class="shopping-links"><a class="grey-text text-lighten-3"
+								href="https://www.marksandspencer.com/" target="_blank">Marks & Spencers:
+								https://www.marksandspencer.com/</a></li>
+						<li class="shopping-links"><a class="grey-text text-lighten-3"
+								href="https://www.lakeland.co.uk/in-the-kitchen/baking/baking-ingredients/"
+								target="_blank">Lakeland:
+								https://www.lakeland.co.uk/in-the-kitchen/baking/baking-ingredients/</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<!-- Scripts enabling jquery and materialize functionality -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<!-- Document ready function to enable the accordion and form functions-->
+	<script type="text/javascript">
+		$(document).ready(function(){
  $('.collapsible').collapsible();
  $('select').formSelect();
  
 });
-</script>
+	</script>
 </body>
+
 </html>
