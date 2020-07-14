@@ -10,32 +10,36 @@ app.config["MONGO_URI"] = 'mongodb+srv://Schnoeff:Brooker3798@recipies-ewzrm.mon
 
 mongo = PyMongo(app)
 
+# This function allows data to be found on mongodb
 @app.route('/')
 @app.route('/get_recipes')
 def get_recipes():
     return render_template('recipes.html', recipes=mongo.db.recipe_details.find())
 
+# This function also allows the data to be found on mongodb
 @app.route('/add_recipes')
 def add_recipes():
     return render_template('addrecipe.html', course=mongo.db.recipe_course.find())
 
-@app.route('/insert_recipe' , methods=['POST'])
+# This function allows data to be added to the sotrage on mongodb
+@app.route('/insert_recipe', methods=['POST'])
 def insert_recipe():
     recipes = mongo.db.recipe_details
     recipes.insert_one(request.form.to_dict())
     return redirect(url_for('get_recipes'))
 
+# This function allows for a single collection of data to be found via object id
 @app.route('/edit_recipe/<recipe_id>')
 def edit_recipe(recipe_id):
-    the_recipe=mongo.db.recipe_details.find_one({"_id":ObjectId(recipe_id)})
-    all_recipe_course=mongo.db.recipe_course.find()
-    return render_template('editrecipe.html', recipe = the_recipe,recipe_course = all_recipe_course)
+    the_recipe = mongo.db.recipe_details.find_one({"_id": ObjectId(recipe_id)})
+    return render_template('editrecipe.html', recipe=the_recipe)
 
+# This function allows for each field in the each field in the mongodb collection to be accessed and changed 
 @app.route('/update_recipe/<recipe_id>', methods=["POST"])
 def update_recipe(recipe_id):
     recipes = mongo.db.recipe_details
     recipes.update({'_id': ObjectId(recipe_id)},
-    {
+                   {
         'recipe_name': request.form.get('recipe_name'),
         'servings': request.form.get('servings'),
         'ingredient_1': request.form.get('ingredient_1'),
@@ -61,14 +65,14 @@ def update_recipe(recipe_id):
     })
     return redirect(url_for('get_recipes'))
 
+# This function allows for any data collection to be deleted 
 @app.route('/delete_recipe/<recipe_id>')
 def delete_recipe(recipe_id):
     mongo.db.recipe_details.remove({'_id': ObjectId(recipe_id)})
     return redirect(url_for('get_recipes'))
 
 
-
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
-            debug=True)
+            debug=False)
