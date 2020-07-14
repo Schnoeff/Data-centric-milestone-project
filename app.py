@@ -5,10 +5,11 @@ from bson.objectid import ObjectId
 
 app = Flask(__name__)
 
+if os.path.exists("env.py"):
+    import env
 
-
-app.config["MONGO_DBNAME"] = 'recipes'
-app.config["MONGO_URI"] = 'mongodb+srv://Schnoeff:Brooker3798@recipies-ewzrm.mongodb.net/recipes?retryWrites=true&w=majority'
+app.config["MONGO_DBNAME"] = os.environ.get('MONGO_DBNAME')
+app.config["MONGO_URI"] = os.environ.get ('MONGO_URI')
 
 mongo = PyMongo(app)
 
