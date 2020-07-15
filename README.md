@@ -53,32 +53,40 @@ My project hosts a rather simple and accessible style therefor there are not a w
 
 * [MongoDB] (https://www.mongodb.com/)
   * I Utilised MongoDB as my storage database as i felt it was well suited for my website and i had the most knowledge with at the time.
+
+* [Python] 
+  * I used the python language to construct my app with the use of Flask and Py-Mongo together. 
+ 
+* [JavaScript] 
+  * I used JavaScript to create a document ready function which enabled my accordions and forms on my website. 
+
+## Testing
+
+Throughout the development process I was testing how my website was being effected by any alterations I made in my code such as positioning and sizes. I did this by running the website in a separate browser tab and using the inspect function. Through this function I was consistently playing around with different sizes, colors and layouts as I could make any changes I wanted without effecting the actually code. This enabled me to pick up on silly mistakes I made like some elements not being responsive on the smallest resolutions. I was also able to pre plan what colors and sizes I wanted to implement without wasting any time on a gamble whether it would work or not. Using the inspect function also reduced the chance for errors because I was already able to see the end result before I added it to the real code. Also when i was testing the website myself I was constantly checking to make sure that all of my app.py functions were function correctly such as edit add and delete buttons.
+
+* I tested my Add and Edit recipe page by doing the following:
+  * Clicking on the 'Add/Edit recipe' button
+  * Trying to submit an empty form and making sure the required fields text works
+  * Trying to submit a form with letters in the servings input field and making sure it asks specifically for a number input
+  * Trying to submit a valid form entry and insuring it appears on the recipe page
+
+
+* I tested my Delete button by doing the following:
+  * Clicking on 'Delete recipe' 
+  * Making sure that the data entry was successfully deleted from the website and the database on MongoDB
   
+  
+I also used a code validator website (https://validator.w3.org/) for both my CSS and HTML files throughout the development process. By using this website I was able to keep track of the code I was writing and any mistakes would be flagged up there and then which made rectifying them much easier as oppose to waiting until the end of my project then fixes every error I had made.
 
-Technologies Used
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+Another method of testing I used was sending my website out to other people. I sent the server port link out to a few of my family and friends and ask them to have a play around with the site including but not limited to the navigation features or forms I had. After they had a go with the site I then asked them to give me some feedback on what was good, what's was bad and what could be improved. Because of the target user i had chosen I also decided it would have been a good idea to let my grandparents have a go with my website at various stages of my production and see what they thought about the styles, readability and simplicity of the general website. This allowed me to hone in on specififc features that I would maybe not know was an issue for older people. 
 
-JQuery
-The project uses JQuery to simplify DOM manipulation.
-Testing
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+My website also adapts to different screen sizes and resolutions in a way that as the screen gets smaller the layout will change by shifting around the elements to hold a similar style while also being professional and functional. I have developed my website to be responsive as a whole in which I mean that as you switch resolutions to medium or small resolutions the whole page will stay very similar until you cross certain resolution checkpoints. For example, I have each of my recipe card data entries presented as a col 6 following the grid layout system featured on materialize. From what I have experience with other websites over the years and through the feedback I have been given this layout would work well with modern day internet styles. It makes each item easy to view and makes them all stand out due to them covering the entire width of the screen.
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+When i was testing my MonogDB connection and and app.py connection i had several issues and problems throughout. Most of these were consisting of typos or spelling errors which caused the connections to be faulty. I also had a couple of problems trying to store my MongoDB URI and password as a environmental variable and adding it to a gitignore file. I eventually overcame this with the guidance of a few tutorials and eventually found out that i had a typo in the env.py file I made causing an internal server error 500. 
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
-Contact form:
-Go to the "Contact Us" page
-Try to submit the empty form and verify that an error message about the required fields appears
-Try to submit the form with an invalid email address and verify that a relevant error message appears
-Try to submit the form with all inputs valid and verify that a success message appears.
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+## Deployment
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
-
-Deployment
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
 
 In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
