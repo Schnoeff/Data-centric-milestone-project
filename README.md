@@ -4,8 +4,21 @@ My website is a simple and easy to use recipe storage page where the user can vi
 
 
 
-UX
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+##UX
+
+When designing my website i had decided to create to target (but not limit it to) an elderly audience. With this in mind I tried to create a design that was very simple and unintimidating to use with minimal amounts of clutter and anything that may be potentially confusing or not vital to the websites functionality. The idea was to have as little buttons and accessories as possible to enable easy access to the users recipes they may have stored at any time or place. 
+
+The objective of this website is to enable the user to quickly and easily find,create,edit and delete any recipe they may have added to wanted to add. I have also made the design responsive so the user will have the ability to view thier recipe book on their mobile, tablet or pc at any time. This creates a new level of accessibility as this means no matter what situation/environment youre in you can always access the storge and tweak what you want.
+
+I believe that my project is the ideal way to help the user achieve their goal of the website because i have implemented all of the core aspects of data manipulation in a very simple manner via the use of clear labeled buttons throughout the page to try and make the actions of each button as clear as possible. The user can create a new data entry with the click of a button and by filling in a nice and tidy form clearly laying out what input field does what. The user can also edit any stored data by clicking on the 'Edit recipe' button at any time and once again very easily find and alter their desired piece of data. And finally the user can also simply remove any data collection with the click of a button labeled 'delete' with a handy bin icon to further clarify the buttons outcome. 
+
+##User Stories
+
+As an elderly lady, I want to be able to go on my phone and double check the cooking method of my homemade trifle as I sometimes get forgetful. So i would need to open up the website and have a quick scroll through the list of recipes i have created so i can retrieve my recipe and make my trifle without fear of getting it wrong.
+
+As a person in my 20's, I want to update one of my cheesecake recipes as i have found a newer and better version of it online which sounds much nicer. To do this i would need to hop on to the website and find the cheesecake recipe witha simple scroll down the page and once I have found it I will need to click the edit button and change any data that needs updating leaving the correct recipe on the home page ready for when i need it.
+
+
 
 In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
 
