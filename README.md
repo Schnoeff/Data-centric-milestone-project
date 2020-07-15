@@ -1,11 +1,11 @@
-                                                                             # Recipe Pouch
+ # Recipe Pouch
 
 My website is a simple and easy to use recipe storage page where the user can view existing recipes and more importantly create new recipe, edit existing recipes and delete old or unneeded recipes. It holds a very simple design consisting of the site name located at the top and the list of recipes that have been added. The creation and edit pages are also following the simple theme as they contain a spread out and easy to understand form where the user can do whatever they need to do whenever they need it . The page contains no images or animations as I intend for the page to be one where you need to just pop on and have a quick reminder of ingredients or just to follow the baking method with no distractions or clutter filling the screen. 
 
 
 ## UX
 
-When designing my website i had decided to create to target (but not limit it to) an elderly audience. With this in mind I tried to create a design that was very simple and unintimidating to use with minimal amounts of clutter and anything that may be potentially confusing or not vital to the websites functionality. The idea was to have as little buttons and accessories as possible to enable easy access to the users recipes they may have stored at any time or place. I also included various retail store shopping links in the footer of every page. The idea of this is to enable the user to click on these links and be redirected to an external shopping site where they can compare prices and get baking ingredients. 
+When designing my website i had decided to create to target (but not limited to) an elderly audience. With this in mind I tried to create a design that was very simple and unintimidating to use with minimal amounts of clutter and anything that may be potentially confusing or not vital to the websites functionality. The idea was to have as little buttons and accessories as possible to enable easy access to the users recipes they may have stored at any time or place. I also included various retail store shopping links in the footer of every page. The idea of this is to enable the user to click on these links and be redirected to an external shopping site where they can compare prices and get baking ingredients. 
 
 The objective of this website is to enable the user to quickly and easily find,create,edit and delete any recipe they may have added to wanted to add. I have also made the design responsive so the user will have the ability to view thier recipe book on their mobile, tablet or pc at any time. This creates a new level of accessibility as this means no matter what situation/environment youre in you can always access the storge and tweak what you want.
 
@@ -26,29 +26,34 @@ As a busy worker, I have very little time to make loads of different and time co
 
 My project hosts a rather simple and accessible style therefor there are not a whole load of dynamic features to overload the target user with. 
 
-My first feature on my page is the logo. When clicked, this allows the user to navigate back to the home page where a list of the recipes can be found. 
+* My first feature on my page is the logo. When clicked, this allows the user to navigate back to the home page where a list of the recipes can be found. 
 
-My second feature is the 'Add recipes' button. This allows the users to create new data entries by having the user fill out the required form.
+* My second feature is the 'Add recipes' button. This allows the users to create new data entries by having the user fill out the required form.
 
-My third feature is the 'Edit recipes' button. This allows the users to alter existing data entries by having the user fill out the required form.
+* My third feature is the 'Edit recipes' button. This allows the users to alter existing data entries by having the user fill out the required form.
 
-My fourth feature is the 'Delete' button. When clicked, this allows the user to completely remove existing data entries.
+* My fourth feature is the 'Delete' button. When clicked, this allows the user to completely remove existing data entries.
 
-My fifth feature is the accordion format of the ingredients and method sections. This allows the user to have a clear overview of all the recipies on the home page however when the dropdown is triggered it will expand and display the desired information.
+* My fifth feature is the accordion format of the ingredients and method sections. This allows the user to have a clear overview of all the recipies on the home page however when the dropdown is triggered it will expand and display the desired information.
 
-My sixth feature is the footer containign shopping site links, This allows the user to check various poplar retail store stocks to see where they can get the cheapest ingredients if they need some. 
+* My sixth feature is the footer containign shopping site links, This allows the user to check various poplar retail store stocks to see where they can get the cheapest ingredients if they need some. 
 
 ### Future feature implementations
 
-The first feature i want to add is the use of an account system. Having this in my website will drastically improve its usability as at this present time anyone can access the page and change a recipe at will. With the use of the account system, the experience will be a lot more personalised and better suited to the websites intention. The reason i did not include this feature is purely downt o lack of knowledge. I had a go at trying to implement it but after a couple of days i was running out of time to complete the website.
+* The first feature i want to add is the use of an account system. Having this in my website will drastically improve its usability as at this present time anyone can access the page and change a recipe at will. With the use of the account system, the experience will be a lot more personalised and better suited to the websites intention. The reason i did not include this feature is purely downt o lack of knowledge. I had a go at trying to implement it but after a couple of days i was running out of time to complete the website.
 
-The second feature i would like to add is a chat section where any user can join with an account and start chatting and interacting with other people on the page. This would also improve the websites user experience as it will enable people to talk and share recipes and cooking tips. 
+* The second feature i would like to add is a chat section where any user can join with an account and start chatting and interacting with other people on the page. This would also improve the websites user experience as it will enable people to talk and share recipes and cooking tips. 
 
-Thirdly, I would also be intersted in adding some sort of validation system where it will prevent users from creating meaningless spam entries clogging up the databases used to store the data. 
+* Thirdly, I would also be intersted in adding some sort of validation system where it will prevent users from creating meaningless spam entries clogging up the databases used to store the data. 
 
 ## Technologies Used
 
+* [Materialize] (https://materializecss.com/)
+  * I utilised the materialize css library in order to create my layot using the grid system and and majority of the other components such as the buttons with icon and the accordion i used as a dropdown inside my recipe cards. 
 
+* [MongoDB] (https://www.mongodb.com/)
+  * I Utilised MongoDB as my storage database as i felt it was well suited for my website and i had the most knowledge with at the time.
+  
 
 Technologies Used
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
