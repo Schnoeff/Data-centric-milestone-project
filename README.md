@@ -53,6 +53,12 @@ My project hosts a rather simple and accessible style therefor there are not a w
 
 * [MongoDB] (https://www.mongodb.com/)
   * I Utilised MongoDB as my storage database as i felt it was well suited for my website and i had the most knowledge with at the time.
+  
+* [Flask]
+  * I used Flask dynamically generate pages and content within the application.
+
+* [PyMongo]
+  * I used Pymongo connect and interact with data to and from my MongoD database.  
 
 * [Python] 
   * I used the python language to construct my app with the use of Flask and Py-Mongo together. 
@@ -60,13 +66,25 @@ My project hosts a rather simple and accessible style therefor there are not a w
 * [JavaScript] 
   * I used JavaScript to create a document ready function which enabled my accordions and forms on my website. 
 
+* [CSS]
+  * I used CSS to style my website with things such as color and font-size
+
+* [HTML]
+  * I used HTML asmy base coding language
+
 ## My MongoDB database
 
-Recipe name | Servings | Ingredients 1-10 | Method 1-10
------------- | ------------- | ------------- | -------------
-Lotus Cheesecake | 12 | Lotus biscuits, cream cheese | 4
+This is my database located on MongoDB which is the backbone of my project. 
+* It consists of: 
+  * An object_ID to locate entries much easier
+  * The recipe name which is in the string format
+  * The amount of servings which is in int format
+  * The list of ingredient contined within an array
+  * The method list which is also contined within an array
 
+![MongoDB](https://user-images.githubusercontent.com/47664841/87722709-7b98bb80-c7b0-11ea-94c8-0f1a04aee044.jpg)
 
+When structuring my database I did some research at some existing formats however i eventually decided go with the style i made up which is posted above. I am aware that it may not be the most efficient method of laying this type of database out but it worked for what i needed it for. 
 
 ## Testing
 
@@ -101,7 +119,7 @@ When i was testing my MonogDB connection and and app.py connection i had several
   
   * Then, in the terminal window I typed 'git add .' to add all of my intial files to the stagin area.
   
-  * Then, also in the terminal window I typed 'git commit -m "Initial commit"' outlining the what i was i had done between commits. 
+  * Then, also in the terminal window I typed 'git commit -m "Initial commit"' outlining what I had done between commits. 
   
   * Finally, I typed 'git push' which pushed my commits to github where it was stored ready for future commits.
   
@@ -115,20 +133,14 @@ When i was testing my MonogDB connection and and app.py connection i had several
   
   * Once my Github and Heroku accounts were linked i needed to input the correct PORT and IP figures i used in my app.py file which were PORT:0,0,0,0 and IP:5000. To do this I went on the settings page on Heroku and revealed the config vars for my app. This is where i input my figures for the port and ip as well as my Mongodb URI and Name which was used to make sure my database would connect to the Heroku app. 
 
+## Credits
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+The text used in the 3 initial recipes titled "Lotus cheesecake", "Baked Gingerbread Cheesecake" and "Biscoff Millionaire Traybake" were taken from [https://www.janespatisserie.com/].
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
+Inspiration form this project was from the project suggestions tab in the project section of the course material.
 
-Different values for environment variables (Heroku Config Vars)?
-Different configuration files?
-Separate git branch?
-In addition, if it is not obvious, you should also describe how to run your code locally.
+I must also metion that without the help of some of the tutors the website would not be where it is now.
 
-Credits
-Content
-The text for section Y was copied from the Wikipedia article Z
-Media
-The photos used in this site were obtained from ...
-Acknowledgements
-I received inspiration for this project from X
+### Just a quick side note
+
+After receiving my feedback from my last project I am aware that my git commit comments need to be more descriptive and meaningful and now I completely understand what i need to do in the future. With this in mind, 90% of my commit comments feel in to that category of being undescriptive and i oviously can't go back and improve them now.
