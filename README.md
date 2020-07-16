@@ -36,7 +36,7 @@ My project hosts a rather simple and accessible style therefor there are not a w
 
 * My fifth feature is the accordion format of the ingredients and method sections. This allows the user to have a clear overview of all the recipies on the home page however when the dropdown is triggered it will expand and display the desired information.
 
-* My sixth feature is the footer containign shopping site links, This allows the user to check various poplar retail store stocks to see where they can get the cheapest ingredients if they need some. 
+* My sixth feature is the footer containing shopping site links, This allows the user to check various poplar retail store stocks to see where they can get the cheapest ingredients if they need some. 
 
 ### Future feature implementations
 
@@ -59,6 +59,14 @@ My project hosts a rather simple and accessible style therefor there are not a w
  
 * [JavaScript] 
   * I used JavaScript to create a document ready function which enabled my accordions and forms on my website. 
+
+## My MongoDB database
+
+Recipe name | Servings | Ingredients 1-10 | Method 1-10
+------------ | ------------- | ------------- | -------------
+Lotus Cheesecake | 12 | Lotus biscuits, cream cheese | 4
+
+
 
 ## Testing
 
