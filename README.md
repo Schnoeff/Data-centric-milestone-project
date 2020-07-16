@@ -87,6 +87,27 @@ When i was testing my MonogDB connection and and app.py connection i had several
 
 ## Deployment
 
+* Deploying to github
+
+  * My first step when deploying to github was creating my app.py file and getting the basic functionality in place so I could insure that my page connections were working smoothly. 
+  
+  * Then, in the terminal window I typed 'git add .' to add all of my intial files to the stagin area.
+  
+  * Then, also in the terminal window I typed 'git commit -m "Initial commit"' outlining the what i was i had done between commits. 
+  
+  * Finally, I typed 'git push' which pushed my commits to github where it was stored ready for future commits.
+  
+* Deploying to heroku
+
+  * My first step in deploying my website to Heroku was creating an account to host my project on the Heroku website.
+  
+  * Then, I needed to navigate to the 'new' button which then gave me the option to create a new app. When choosing the name for my app I attempted to make the name as close to the project theme as possible so I chose to name it 'Recipe-storages'
+  
+  * After creating a new app i was ready to deploy my initial commits to Heroku. I did this by navigating to the deploy page and clicking on the Github account linking button. I chose to use this method as oppose to using the Herkou CLI and pushing to the master branch every time. It just made everything simpler and more organised.
+  
+  * Once my Github and Heroku accounts were linked i needed to input the correct PORT and IP figures i used in my app.py file which were PORT:0,0,0,0 and IP:5000. To do this I went on the settings page on Heroku and revealed the config vars for my app. This is where i input my figures for the port and ip as well as my Mongodb URI and Name which was used to make sure my database would connect to the Heroku app. 
+
+
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
 
 In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
