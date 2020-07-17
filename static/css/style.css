@@ -3,10 +3,10 @@
 body {
     background-color:lightskyblue;
     font-size:28px;
+    font-family: 'IM Fell Great Primer', serif;
 }
 .page-title{
     font-size:48px;
-    font-family: 'IM Fell Great Primer', serif;
     }
 
 .brand-logo{
@@ -21,13 +21,13 @@ body {
 .page-heading{
     font-size:92px;
     text-align:center;
-    font-family: 'IM Fell Great Primer', serif;
+    
     color:white;
     margin:20px;
 }
 .section-header{
     font-size:34px;
-    font-family: 'IM Fell Great Primer', serif;
+    
     
 }
 /*-----------------------------------------Recipe card*/
@@ -74,7 +74,6 @@ body {
 
 .recipe-box{
     background-color:lightgrey;
-    
     margin:30px;
     border-style:solid;
     border-color:black;
@@ -99,10 +98,6 @@ body {
 }
 
 /*----------------------------------------------------Footer*/
-
-.page-footer{
-    font-family: 'IM Fell Great Primer', serif;
-    }
 
 .shopping-links{
     padding-top:10px;
