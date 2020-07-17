@@ -144,3 +144,5 @@ I must also metion that without the help of some of the tutors the website would
 ### Just a quick side note
 
 After receiving my feedback from my last project I am aware that my git commit comments need to be more descriptive and meaningful and now I completely understand what i need to do in the future. With this in mind, 90% of my commit comments feel in to that category of being undescriptive and i oviously can't go back and improve them now.
+
+Also, After running my code through a validator I found that for some reason i used p tags in a unordered list where they should be. Following this i attempted to change them to li tags however this jumbled up all of my webpages and due to time constraints i have had to leave them as p tags despite them being invalid due to them functioning correctly on the deployed version.
